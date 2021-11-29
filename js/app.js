@@ -1,8 +1,11 @@
 var juego = prompt("¿Cuantas veces quieres jugar?");
 var respuesta = prompt("Elige: \nPiedra \nPapel \nTijera ");
-var compu =Math.floor( Math.random()*3);
+const compu =Math.floor( Math.random()*3);
 var _mensaje = "";
 var eleccion;
+
+
+
 if(respuesta== "Piedra"){
     eleccion = 0;
 }else if(respuesta== "Papel"){
@@ -18,8 +21,9 @@ if(compu == 0){
 }else if(compu == 2){
     elecompu = "Tijera";
 }
+
 for(i=1; i<=juego; i++){
-    if(eleccion == compu){
+    if(eleccion === compu){
     _mensaje = "EMPATE";
     alert(_mensaje)
     document.write("Juego N°" +i+" tu sacaste "+respuesta+" y la compu sacó "+elecompu+".<br>");
@@ -60,7 +64,5 @@ for(i=1; i<=juego; i++){
 
 
     }    
-
-
 }
     
