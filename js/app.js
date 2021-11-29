@@ -1,24 +1,24 @@
-var juego = prompt("¿Cuantas veces quieres jugar?");
+var juego = prompt("¿Cuantas veces quieres jugar?");//Cantidad de juego
 for(i=1; i<=juego; i++){
-    var respuesta = prompt("Elige: \nPiedra \nPapel \nTijera ");
-    var compu = Math.floor( Math.random()*3);
-    var _mensaje = "";
+    var respuesta = prompt("Elige: \nPiedra \nPapel \nTijera ");//Opcion usuario
+    var compu = Math.floor( Math.random()*3);//Opcion compu
+    var _mensaje = "";//Mensaje a mostrar
     var eleccion;
         if(respuesta== "Piedra"){
         eleccion = 0;
-    }else if(respuesta== "Papel"){
-    eleccion = 1;
-    }else if(respuesta== "Tijera"){
-    eleccion = 2;
-    }
+        }else if(respuesta== "Papel"){
+        eleccion = 1;
+        }else if(respuesta== "Tijera"){
+        eleccion = 2;
+        }
     var elecompu;
         if(compu == 0){
-    elecompu = "Piedra";
-    }else if(compu == 1){
-    elecompu = "Papel";
-    }else if(compu == 2){
-    elecompu = "Tijera";
-    }
+        elecompu = "Piedra";
+        }else if(compu == 1){
+        elecompu = "Papel";
+        }else if(compu == 2){
+        elecompu = "Tijera";
+        }
     if(eleccion === compu){
     _mensaje = "EMPATE";
     alert(_mensaje)
@@ -57,8 +57,5 @@ for(i=1; i<=juego; i++){
             }
             alert(_mensaje)
         }
-
-
     }    
 }
-    
